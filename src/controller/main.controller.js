@@ -7,7 +7,7 @@ exports.handlePostRequest = (req, res) => {
     // Send response
     res.status(200).json({
       status: "success",
-      data: JSON.parse(receivedData),
+      data: JSON.parse(data),
       message: "Received message successfully",
     });
   } catch (error) {
