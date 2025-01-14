@@ -14,3 +14,6 @@ app.use("/", routes);
 app.listen(PORT, () => {
   console.log(`Server is running on Port: ${PORT}`);
 });
+
+// Export the Express API
+module.exports = app;
