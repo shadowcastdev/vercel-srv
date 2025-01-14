@@ -7,7 +7,7 @@ const PORT = 8080;
 app.use(bodyParser.json());
 
 // Import routes
-const routes = require("./routes/main.routes");
+const routes = require("./src/routes/main.routes");
 app.use("/", routes);
 
 // Start the server
