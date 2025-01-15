@@ -4,7 +4,7 @@ const app = express();
 const PORT = 8080;
 
 // Middleware to parse JSON requests
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 // Import routes
 const routes = require("./src/routes/main.routes");
