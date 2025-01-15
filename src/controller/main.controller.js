@@ -2,7 +2,7 @@
 exports.handlePostRequest = (req, res) => {
   try {
     const { data } = req.body;
-    console.log("body payload:", data);
+    console.log("body payload:", req.body);
 
     // Process stringify
     const stringifyData = JSON.stringify(data);
