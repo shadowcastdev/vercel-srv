@@ -9,7 +9,7 @@ exports.handlePostRequest = (req, res) => {
     console.log("stringifyData:", stringifyData);
 
     // Convert JSON
-    const jsonData = JSON.parse(stringifyData);
+    const jsonData = JSON.parse(data);
     console.log("jsonData:", jsonData);
 
     // Send response
@@ -19,7 +19,7 @@ exports.handlePostRequest = (req, res) => {
       message: "Received message successfully",
     });
   } catch (error) {
-    console.error("Error processing JSON:", error);
+    console.log("Error processing JSON:", error);
     res.status(400).json({ status: "error", message: "Invalid JSON payload" });
   }
 };
