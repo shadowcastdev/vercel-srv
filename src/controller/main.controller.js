@@ -9,7 +9,7 @@ exports.handlePostRequest = (req, res) => {
     console.log("stringifyData:", stringifyData);
 
     // Convert JSON
-    const jsonData = JSON.parse(data);
+    const jsonData = JSON.parse(stringifyData);
     console.log("jsonData:", jsonData);
 
     // Send response
