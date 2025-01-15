@@ -2,6 +2,12 @@
 exports.handlePostRequest = (req, res) => {
   try {
     console.log("body payload:", req.body);
+    if (!req.body)
+      return res
+        .status(400)
+        .json({ status: "error", message: "No JSON payload provided" });
+
+    // Check if data is present in request body
     const { data } = req.body;
 
     // Process stringify
